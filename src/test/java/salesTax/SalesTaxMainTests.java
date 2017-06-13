@@ -18,7 +18,7 @@ import utils.ResourceUtils;
  */
 public class SalesTaxMainTests extends TestCase {
 
-	public void testCorrectlyReadBuyedProductInCartOnResourceFile() {
+	public void testCorrectlyReadBuyedProductInCartOnFirstResourceFile() {
 		Cart cart = ResourceUtils.getCartFromResourceName(("input1.json"));
 		BuyedProductResource firstBuyedProduct = cart.getBuyedProducts().iterator().next();
 		assertFalse(firstBuyedProduct.getProduct().getIsImported());
@@ -82,7 +82,7 @@ public class SalesTaxMainTests extends TestCase {
 	}
 	
 	
-	public void testSingleOrderInReceiptForThreeResourceFileInput() {
+	public void testSingleOrderInReceiptForFirstResourceFileInput() {
 		Receipt receipt = SalesTaxesFactory.getShoppingService()
 				.purchaseProducts(ResourceUtils.getCartFromResourceName(("input1.json")));
 		ArrayList<Order> listOrders = new ArrayList<Order>(
@@ -100,7 +100,7 @@ public class SalesTaxMainTests extends TestCase {
 
 	}
 
-	public void testFinalReceiptForThreeResourceFileInput() {
+	public void testFinalReceiptForFirstResourceFileInput() {
 		Receipt receipt = SalesTaxesFactory.getShoppingService()
 				.purchaseProducts(ResourceUtils.getCartFromResourceName(("input1.json")));
 		assertEquals(receipt.getTotal(), new BigDecimal(29.83).setScale(2, RoundingMode.HALF_UP));
