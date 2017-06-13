@@ -1,0 +1,22 @@
+{
+	"buyedProducts": [
+		{
+			"quantity": 1,
+			"product": {
+				"name": "imported box of chocolates",
+				"type": "FOOD",
+				"price": 10.00,
+				"isImported": true
+			}
+		},
+		{
+			"quantity": 1,
+			"product": {
+				"name": "imported bottle of perfume",
+				"type": "OTHER",
+				"price": 47.50,
+				"isImported": true
+			}
+		}
+	]
+}
