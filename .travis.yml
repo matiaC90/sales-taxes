@@ -1,12 +1,1 @@
 language: java
-cache:
-  directories:
-  - "$HOME/.cache"
-
-deploy:
-  provider: script
-  script: "mvn deploy -DaltDeploymentRepository=deployment-repo-id::default::https://github.com/matiaC90/sales-taxes"
-  skip_cleanup: true
-  on:
-    tags: false
-    all_branches: true
