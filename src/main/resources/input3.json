@@ -1,0 +1,40 @@
+{
+	"buyedProducts": [
+		{
+			"quantity": 1,
+			"product": {
+				"name": "imported bottle of perfume",
+				"type": "OTHER",
+				"price": 27.99,
+				"isImported": true
+			}
+		},
+		{
+			"quantity": 1,
+			"product": {
+				"name": "1 bottle of perfume",
+				"type": "OTHER",
+				"price": 18.99,
+				"isImported": false
+			}
+		},
+		{
+			"quantity": 1,
+			"product": {
+				"name": "packet of headache pills",
+				"type": "MEDICAL",
+				"price": 9.75,
+				"isImported": false
+			}
+		},
+		{
+			"quantity": 1,
+			"product": {
+				"name": "imported box of chocolates",
+				"type": "FOOD",
+				"price": 11.25,
+				"isImported": true
+			}
+		}
+	]
+}

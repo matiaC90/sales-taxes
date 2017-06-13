@@ -1,0 +1,31 @@
+{
+	"buyedProducts": [
+		{
+			"quantity": 1,
+			"product": {
+				"name": "Book",
+				"type": "BOOK",
+				"price": 12.49,
+				"isImported": false
+			}
+		},
+		{
+			"quantity": 1,
+			"product": {
+				"name": "Music Cd",
+				"type": "OTHER",
+				"price": 14.99,
+				"isImported": false
+			}
+		},
+		{
+			"quantity": 1,
+			"product": {
+				"name": "chocolate bar",
+				"type": "FOOD",
+				"price": 0.85,
+				"isImported": false
+			}
+		}
+	]
+}
